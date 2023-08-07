@@ -1,0 +1,17 @@
+.tippy-box {
+    border-radius: $radius_m;
+    background: $mid_gray;
+    color: $light_gray;
+}
+.tippy-content {
+    padding: 5px 10px 3px 10px;
+}
+.tippy-arrow::before {
+    color: $mid_gray;
+}
+
+/* For SVG arrow (Round) */
+.tippy-popper[x-placement^=right] .tippy-tooltip.mytheme-theme .tippy-roundarrow { fill: #ff0000; }
+.tippy-popper[x-placement^=left] .tippy-tooltip.mytheme-theme .tippy-roundarrow { fill: #ff0000; }
+.tippy-popper[x-placement^=top] .tippy-tooltip.mytheme-theme .tippy-roundarrow { fill: #ff0000; }
+.tippy-popper[x-placement^=bottom] .tippy-tooltip.mytheme-theme .tippy-roundarrow { fill: #ff0000; }

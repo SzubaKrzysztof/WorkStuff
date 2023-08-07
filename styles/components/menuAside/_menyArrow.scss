@@ -1,0 +1,15 @@
+.meny-arrow {
+    display: none;
+    @include media-breakpoint-up(lg) {
+        position: fixed;
+        left: 10px;
+        display: block;
+        top: 50vh;
+        transform: translateX(-50%);
+        animation: arrowAnim 1s ease-in-out infinite;
+        color: $mid_gray;
+        i {
+            font-size: 50px;
+        }
+    }
+}

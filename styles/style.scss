@@ -1,0 +1,45 @@
+body {
+    font-family:  'Hind', Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+}
+
+@import 'base/vars';
+@import 'base/icons';
+@import 'base/konessoIcons';
+@import 'base/fonts';
+@import 'base/btn';
+@import 'base/animate';
+@import 'base/typography';
+@import 'base/keyframes';
+@import 'base/slidebar';
+@import 'base/container';
+@import 'base/checkbox';
+
+@import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/utilities';
+@import '../node_modules/swiper/swiper.scss';
+@import '../node_modules/tippy.js/dist/tippy.css';
+@import 'base/reset';
+
+@import 'components/header/header';
+@import 'components/footer/footer';
+@import 'components/reusable/showMore';
+@import 'components/menuAside/menuAside';
+@import 'components/reusable/overlay';
+@import 'components/reusable/countdownTimer';
+@import 'components/mainProduct';
+@import 'components/reusable/progressBar';
+@import 'components/knowledgeBase';
+@import 'components/reusable/stars';
+@import 'components/reusable/arrows';
+@import 'components/libs/hystmodal';
+@import 'components/libs/tippy';
+@import 'components/menuAside/menyProduct';
+
+@import 'pages/mainPage';
+@import 'pages/searchPage';
+@import 'pages/productPage';

@@ -1,0 +1,106 @@
+a {
+    text-decoration: none;
+    color : #000;
+    &:visited {
+        color: #000;
+    }
+    &:link {
+        color: #000;
+    }
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+div[data-component="SliderX"] {
+    width: 100%;
+    overflow: hidden;
+}
+
+select {
+    &:focus-visible {
+        border: none !important;
+        outline: none;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+    &:active {
+        border: none !important;
+        outline: none;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+}
+
+textarea {
+    resize: none;
+    &:focus {
+        border: none;
+        outline: none;
+        -webkit-appearance: none;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+}
+
+input {
+    width: 100%;
+    border-radius: $radius_m;
+    border: 1px solid $light_gray;
+    &:focus {
+        border: none;
+        outline: none;
+        -webkit-appearance: none;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+    &:focus::placeholder {
+        color: transparent;
+    }
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    &:focus {
+        -webkit-appearance: checkbox;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.row {
+    margin: 0;
+    @include media-breakpoint-up(md) {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+} 
+
+.no-gutters > .col, .no-gutters > [class*="col-"] {
+    padding-right: 0px;
+    padding-left: 0px;
+    @include media-breakpoint-up(md) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}

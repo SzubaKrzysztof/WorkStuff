@@ -1,0 +1,65 @@
+.accesibility-filter {
+    .checkbox {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 2px 0;
+        width: 98%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        cursor: pointer;
+        user-select: none;
+    }
+    .checkbox input {
+        position: absolute;
+        width: 0;
+        left: 50px;
+        height: 0;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .checkbox .checkmark {
+        position: relative;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        background: white;
+        border-radius: 4px;
+        outline: 1px solid #ddd;
+        transition: all 0.2s ease;
+    }
+    
+    .checkbox:hover .checkmark {
+        background: #f4f4f5;
+        transition: all 0.2s ease;
+    }
+    
+    .checkbox input:checked ~.checkmark {
+        background: #02c251;
+        outline: 1px solid #02c251;
+    }
+    
+    .checkbox .checkmark::after {
+        position: absolute;
+        display: block;
+        content: "";
+        left: 50%;
+        top: 40%;
+        width: 6px;
+        height: 0px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: translate(-50%, -50%) rotate(65deg);
+        opacity: 0;
+        transition: all 0.2s ease;
+    }
+    
+    .checkbox input:checked~.checkmark::after {
+        opacity: 1;
+        height: 10px;
+        transform: translate(-50%, -50%) rotate(45deg); 
+        transition: all 0.2s ease;
+    }
+}

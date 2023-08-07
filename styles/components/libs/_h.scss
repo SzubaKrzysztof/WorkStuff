@@ -1,0 +1,22 @@
+.h-sticky {
+    transition: transform 0.25s ease-in-out;
+    will-change: transform;
+    position: sticky;
+    top:0;
+    left:0;
+    width:100%;
+    &--pinned {
+        transform: translateY(0);
+    }
+    &--unpinned {
+        transform: translateY(-100%);
+    }
+    &.headroom--not-top {
+        .top-info {
+            transform: translateY(-100%);
+            position: absolute;
+            top: -36px;
+        }
+        box-shadow: 0px 11px 19px 0px rgba(0,0,0, 0.15);
+    }
+}

@@ -1,0 +1,87 @@
+.knowledge-base {
+    @include media-breakpoint-up(md) {
+        margin-top: 50px;
+    }
+    .slider {
+        overflow: hidden;
+    }
+    .wrapper {
+        .data {
+            display: none;
+            @include media-breakpoint-up(md) {
+                display: block;
+            }
+        }
+    }
+    .item {
+        height: 400px;
+        position: relative;
+        border-radius: $radius_m;
+        @include media-breakpoint-up(md) {
+            height: 523px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: $radius_m;
+            object-fit: cover;
+        }
+        .text {
+            position: absolute;
+            color: #fff;
+            top: 20%;
+            width: 70%;
+            padding: 30px 15px 20px 40px;
+            border-radius: 0 $radius_m $radius_m 0;
+            background: rgba(32, 32, 32, 0.7);
+            font-size: 14px;
+            @include media-breakpoint-up(md) {
+                top: 50%;
+            }
+            .btn {
+                position: absolute;
+                right: 30px;
+                @include media-breakpoint-up(md) {
+                    position: absolute;
+                    right: 30px;
+                }
+            }
+        }
+    }
+    .recepies {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        @include media-breakpoint-up(lg) {
+            margin-top: 0;
+        }
+        .knowledge-pagination {
+            margin-top: 25px;
+            @include media-breakpoint-up(xl) {
+                margin-top: 0;
+            }
+        }
+        .item-pagination {
+            border: 1px solid #fff;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s;
+            border-radius: $radius_m;
+            cursor: pointer;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+            &:hover {
+                border: $green_border;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+            }
+            b {
+                margin-left: 10px;
+            }
+        }
+    }
+}

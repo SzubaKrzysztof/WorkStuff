@@ -1,0 +1,86 @@
+.price-wrapper {
+    font-size: 15px;
+}
+
+@mixin typo(){
+    -webkit-font-smoothing: antialiased;
+}
+
+@mixin typo-default() {
+    @include typo();
+    line-height: 1em;
+    font-size: $font_normal;
+    font-weight: 300;
+}
+
+@mixin typo-default-small() {
+    @include typo();
+    font-size: $font_small;
+    font-weight: 300;
+}
+
+@mixin typo-default-h1() {
+    @include typo();
+    font-size: $h1;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+
+@mixin typo-default-h2() {
+    @include typo();
+    font-size: $h2;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+
+@mixin typo-default-h3() {
+    @include typo();
+    font-size: $h3;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+
+@mixin typo-default-h4() {
+    @include typo();
+    font-size: $h4;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+
+@mixin typo-default-h5() {
+    @include typo();
+    font-size: $h5;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+
+@mixin typo-default-h6() {
+    @include typo();
+    font-size: $h6;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+
+h1, .h1 {
+  @include typo-default-h1();
+}
+
+h2, .h2 {
+  @include typo-default-h2();
+}
+
+h3, .h3 {
+  @include typo-default-h3();
+}
+
+h4, .h4 {
+  @include typo-default-h4();
+}
+
+h5, .h5 {
+  @include typo-default-h5();
+}
+
+h6, .h6 {
+  @include typo-default-h6();
+}

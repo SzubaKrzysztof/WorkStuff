@@ -1,0 +1,17 @@
+.show-more {
+    color: #000;
+    margin: 0 auto;
+    display: block;
+    border-radius: $radius_m;
+    margin-top: 20px;
+    padding: 5px 0;
+    width: 40%;
+    background: $light_gray;
+    text-align: center;
+    &:hover {
+        text-decoration: underline;
+    }
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}

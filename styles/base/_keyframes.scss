@@ -1,0 +1,57 @@
+@mixin amim {
+    @keyframes reveal {
+        0% {
+            transform: translateX(-10px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
+    }
+}
+
+@keyframes arrowAnim {
+    0% {
+        transform: translateX(-26px);
+        opacity: 0;
+    }
+    20% {
+        transform: translateX(-24px);
+        opacity: 0.5;
+    }
+    40% {
+        transform: translateX(-22px);
+        opacity: 1;
+    }
+    60% {
+        transform: translateX(-20px);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(-18px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(-16px);
+        opacity: 0;
+    }
+}
+
+@keyframes checkboxCheck {
+    0%{
+        width: 0;
+        height: 0;
+        border-color: #fff;
+        transform: translate3d(0,0,0) rotate(45deg);
+    }
+    33%{
+        width: 8px;
+        height: 0;
+        transform: translate3d(0,0,0) rotate(45deg);
+    }
+    100%{    
+        width: 8px;
+        height: 13px;    
+        border-color: #212121;
+        transform: translate3d(0,-8px,0) rotate(45deg);
+    }
+}

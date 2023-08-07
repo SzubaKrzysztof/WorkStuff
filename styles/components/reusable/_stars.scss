@@ -1,0 +1,28 @@
+.stars-wrapper {
+    display: flex;
+    align-items: center;
+    color: $gold;
+    font-size: 12px;
+    .star-primary {
+        margin: 0 2px;
+        text-decoration: none;
+        &:before {
+            font-family: 'konesso_icons';
+            content: '\e804';
+        }
+    }
+    .star-half {
+        margin: 0 2px;
+        &:before {
+            font-family: 'konesso_icons';
+            content: '\e805';
+        }
+    }
+    .star-none {
+        margin: 0 2px;
+        &:before {
+            font-family: 'konesso_icons';
+            content: '\e806';
+        }
+    }
+}

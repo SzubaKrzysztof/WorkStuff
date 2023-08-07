@@ -1,0 +1,130 @@
+.banner-main {
+    .second-banner {
+        .slider {
+            border: $green_border;
+            border-radius: $radius_m;
+            padding: 15px;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            .arrows {
+                @include media-breakpoint-down(md) {
+                    .arrow-prev, .arrow-next {
+                        transform: translateY(-50%);
+                        opacity: 1;
+                    } 
+                }                
+            }
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                width: 100%;
+                .promo-image {
+                    max-height: 300px;
+                    margin: 0 auto;
+                    object-fit: none;
+                    @include media-breakpoint-up(md) {
+                        width: 70%;
+                        max-height: 120px;
+                        object-fit: contain;
+                    }
+                    @include media-breakpoint-up(lg) {
+                        max-height: 200px;
+                    }
+                    @include media-breakpoint-up(xl) {
+                        max-height: 320px;
+                    }
+                }
+                .promo-title {
+                    @include media-breakpoint-up(md) {
+                        font-size: 14px;
+                    }
+                }
+                .progress-bar {
+                    display: block;
+                    @include media-breakpoint-up(md) {
+                        display: none;
+                    }
+                    @include media-breakpoint-up(lg) {
+                        display: block;
+                    }
+                }
+                .promo-price {
+                    margin-top: 10px;
+                    @include media-breakpoint-up(md) {
+                        margin-top: 0;
+                    }
+                    @include media-breakpoint-up(lg) {
+                        margin-top: 10px;
+                    }
+                    .qty {
+                        font-size: 16px;
+                        font-weight: 300;
+                        b {
+                            font-weight: 500;
+                            font-size: 18px;
+                            span {
+                                font-weight: 100;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    .timer {
+                        display: flex;
+                        @include media-breakpoint-up(md) {
+                            display: none;
+                        }
+                        @include media-breakpoint-up(xl) {
+                            display: flex;
+                        }
+                    }
+                    .price-wrapper {
+                        text-align: right;
+                        .discount {
+                            position: relative;
+                            font-size: 0.9em;
+                            text-decoration: none;
+                            &:after {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: 40%;
+                                left: 3px;
+                                -webkit-transform: rotate(-7deg);
+                                transform: rotate(-7deg);
+                                opacity: 0.7;
+                                width: 100%;
+                                height: 1px;
+                                background: #000;
+                            }
+                        }
+                        .price {
+                            color: $red;
+                        }
+                    }
+                }
+            }
+            .sale-main {
+                font-size: 0.9em;
+                .title {
+                    color: $gray;
+                }
+                .price-wrapper {
+                    border: $red_border;
+                    padding: 5px 10px;
+                    border-radius: $radius_s;
+                    .price {
+                        font-size: 1.3em;
+                        color: $red;
+                    }
+                }
+            }
+            &:hover .arrow-prev, &:hover .arrow-next {
+                opacity: 1;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
